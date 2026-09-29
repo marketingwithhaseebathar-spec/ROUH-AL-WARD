@@ -73,8 +73,8 @@ function buildWhatsAppUrl(message) {
 // 3b. Snapchat Pixel — Safe WhatsApp button event tracker
 function fireSnapchatWhatsAppEvent() {
   if (typeof window.snaptr === 'function') {
-    window.snaptr('track', 'CUSTOM_EVENT', {
-      custom_event_name: 'WHATSAPP_BUTTON_CLICK'
+    window.snaptr('track', 'CUSTOM_EVENT_1', {
+      description: 'WHATSAPP_BUTTON_CLICK'
     });
   }
 }
